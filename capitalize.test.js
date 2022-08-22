@@ -18,3 +18,7 @@ test('Check number input', ()=>{
 test('Check number inside of string', ()=>{
     expect(capitalize('15')).toBe('Error: input are number')
 });
+
+test('Check String Capitalize', ()=>{
+    expect(capitalize('test')).toBe('Test')
+});
