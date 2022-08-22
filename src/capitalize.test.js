@@ -2,10 +2,12 @@
 //     expect(2 + 2).toBe(4);
 //   });
 
-import capitalize from "./capitalize"
+import { capitalize } from "./capitalize";
+
 
 test('Check empty input', ()=>{
-    expect(capitalize()).toBe('Error: no input')
+    expect(capitalize()).toBe('Error: no input');
+    // expect(reverseString()).toBe('Error: no input');
 });
 test('Check empty input string', ()=>{
     expect(capitalize('        ')).toBe('Error: no input')
@@ -22,3 +24,7 @@ test('Check number inside of string', ()=>{
 test('Check String Capitalize', ()=>{
     expect(capitalize('test')).toBe('Test')
 });
+
+// test('reverseString', ()=>{
+//     expect().toBe();
+// })

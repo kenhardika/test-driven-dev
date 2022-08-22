@@ -2,7 +2,8 @@
   "name": "test-driven-dev",
   "version": "1.0.0",
   "description": "TDD based project",
-  "main": "index.js",
+  "main": "capitalize.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
