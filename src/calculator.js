@@ -23,13 +23,18 @@ function calculator(A,B){
             return numA - numB;
         },
         multiply: ()=>{
-
             let result = (numA * numB).toFixed(2);
+            return parseFloat(result);
+        },
+        divide: ()=>{
+            if(numB === 0){
+                return 'Error: Cannot divided by 0'
+            }
+            let result = (numA / numB).toFixed(2);
             return parseFloat(result);
         }
     }    
 }
 
-console.log(calculator(2,2.1).multiply());
 
 export {calculator}

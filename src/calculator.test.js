@@ -25,3 +25,10 @@ test('Test Multiply', ()=>{
     expect(calculator(1.25,3).multiply()).toBe(3.75);
     expect(calculator(2, 3.557).multiply()).toBe(7.11);
 })
+
+test('Test Divide', ()=> {
+    expect(calculator(4,2).divide()).toBe(2);
+    expect(calculator(5,2).divide()).toBe(2.5);
+    expect(calculator(5,0).divide()).toBe('Error: Cannot divided by 0')
+    expect(calculator(0,5).divide()).toBe(0);
+})
