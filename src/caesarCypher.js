@@ -4,9 +4,15 @@
 // because cypherLetter = shiftNum + letterNum so 2+0 = 2, what got number 2? thats "C".
 console.log('Caesar Cypher')
 
-
 function cypher(word){
-    return word
+    if(/[^a-zA-Z0-9\s]+$/.test(word)){
+        console.log(word.replace(/[^a-zA-Z0-9\s]/g,''));
+        return word.replace(/[^a-zA-Z0-9\s]/g,'');
+    }
+    console.log(word);
+    return word;
 }
 
+cypher('whe?!@&@)@_+');
+cypher('wahaha');
 export {cypher}

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "TDD based project",
   "private": true,
+  "type": "module",
   "scripts": {
     "test": "jest",
     "build": "webpack"
